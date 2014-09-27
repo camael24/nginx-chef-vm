@@ -18,7 +18,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     # You may also specify custom JSON attributes:
     chef.json = {
       "nginx-fpm" => {
-        "docroot" => "/home/vagrant"
+        "docroot" => "/vagrant_data"
       }
     }
   end
