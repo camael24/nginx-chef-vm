@@ -1,0 +1,25 @@
+#!/usr/bin/env ruby
+#^syntax detection
+
+site 'https://supermarket.getchef.com/api/v1'
+
+cookbook 'apt'
+cookbook 'build-essential'
+cookbook 'chef-client'
+cookbook 'php'
+cookbook 'php-fpm'
+cookbook 'sqlite'
+cookbook 'vim'
+cookbook 'nginx'
+cookbook 'git'
+cookbook 'memcached'
+cookbook 'imagemagick'
+cookbook 'hosts'
+
+
+# cookbook 'rvm',
+#   :git => 'https://github.com/fnichol/chef-rvm'
+
+# cookbook 'postgresql',
+#   :git => 'https://github.com/findsyou/cookbooks',
+#   :ref => 'postgresql-improvements'

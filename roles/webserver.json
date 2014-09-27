@@ -1,0 +1,24 @@
+{
+  "name": "webserver",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+    "nginx-fpm" : {
+        "server_name" : "vagrant",
+        "docroot" : "/vagrant_data"
+      }
+  },
+  "run_list": [
+    "recipe[apt]",
+    "recipe[vim]",
+    "recipe[build-essential]",
+    "recipe[hosts]",
+    "recipe[php]",
+    "recipe[memcached]",
+    "recipe[imagemagick]",
+    "recipe[nginx]",
+    "recipe[nginx-fpm]"
+  ],
+  "description": "",
+  "chef_type": "role"
+}
+
