@@ -13,10 +13,14 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     chef.cookbooks_path = ["cookbooks", "site-cookbooks"]
     chef.roles_path = "roles"
     chef.data_bags_path = "data_bags"
-    chef.add_role = "webserver"
+    chef.add_role "webserver"
   
     # You may also specify custom JSON attributes:
-    # chef.json = { }
+    chef.json = {
+      "nginx-fpm" => {
+        "docroot" => "/home/vagrant"
+      }
+    }
   end
 
 end

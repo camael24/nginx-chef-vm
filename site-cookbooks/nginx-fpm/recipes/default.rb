@@ -36,8 +36,5 @@ template "#{node['nginx']['dir']}/sites-available/default" do
   owner  node['nginx']['user']
   group  node['nginx']['group']
   mode   '0644'
-  variables({
-    :x_men => node['foo']['foobar']
-  })
   notifies :reload, 'service[nginx]'
 end
