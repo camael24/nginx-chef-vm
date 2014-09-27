@@ -7,7 +7,12 @@ require_recipe "hosts"
 package "php5-fpm" do
   action :install
 end
+
 package "php5-curl" do
+  action :install
+end
+
+package "git" do
   action :install
 end
 

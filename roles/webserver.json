@@ -10,6 +10,7 @@
     "recipe[memcached]",
     "recipe[imagemagick]",
     "recipe[nginx]",
+    "recipe[sqlite]",
     "recipe[nginx-fpm]"
   ],
   "description": "",
