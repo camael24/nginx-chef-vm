@@ -3,18 +3,25 @@
 
 site 'https://supermarket.getchef.com/api/v1'
 
+# webserver 
 cookbook 'apt'
 cookbook 'build-essential'
 cookbook 'chef-client'
 cookbook 'php'
 cookbook 'php-fpm'
-cookbook 'vim'
 cookbook 'sqlite'
 cookbook 'nginx'
 cookbook 'memcached'
 cookbook 'imagemagick'
 cookbook 'hosts'
 
+# zsh
+cookbook 'chef-solo-search'
+cookbook 'zsh'
+cookbook 'oh-my-zsh'
+
+#php-dev
+cookbook 'composer'
 
 # cookbook 'rvm',
 #   :git => 'https://github.com/fnichol/chef-rvm'

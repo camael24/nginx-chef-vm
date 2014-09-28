@@ -1,0 +1,12 @@
+{
+  "name": "zsh",
+  "json_class": "Chef::Role",
+  "run_list": [
+    "recipe[chef-solo-search]",
+    "recipe[zsh]",
+    "recipe[oh-my-zsh]"
+  ],
+  "description": "",
+  "chef_type": "role"
+}
+
