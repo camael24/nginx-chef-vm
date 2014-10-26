@@ -13,13 +13,12 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     chef.roles_path = "roles"
     chef.data_bags_path = "data_bags"
     chef.add_role ("webserver")
-    # chef.add_role ("zsh")
     chef.add_role ("php-dev")
 
     # You may also specify custom JSON attributes:
     chef.json = {
       "nginx-fpm" => {
-        "docroot" => "/vagrant_data/public"
+        "docroot" => "/vagrant_data/Public"
       }
     }
   end
